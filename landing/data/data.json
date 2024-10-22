@@ -1,0 +1,212 @@
+[
+    {
+        "id":1,
+        "projectName":"Countdown timer app ⌚",
+        "description":"countdown timer application in nextjs",
+        "image":"/images/football.jpg",
+        "link":"https://countdown-timer-lilac-one.vercel.app/"
+    },
+    {
+        "id":2,
+        "projectName":"⛅ Weather Widget App",
+        "description":"Number Guessing game in nextjs",
+        "image":"/images/football.jpg",
+        "link":"https://weather-app-puce-nu-45.vercel.app/"
+    },
+    {
+        "id":3,
+        "projectName":"🎉 Birthday Wishing App",
+        "description":"Birthday wishing app in nextjs",
+        "image":"/images/football.jpg",
+        "link":"https://tailwindcss.com/docs/width"
+    },
+    {
+        "id":4,
+        "projectName":"Number guessing game",
+        "description":"🚀 Number Guessing game in nextjs",
+        "image":"/images/football.jpg",
+        "link":"https://tailwindcss.com/docs/width"
+    },
+    {
+        "id":5,
+        "projectName":"🧮 Simple Calculator",
+        "description":"🚀 Created a simple and easy to use calculator app using nextjs",
+        "image":"/images/football.jpg",
+        "link":"https://calculator-lilac-delta.vercel.app/"
+    },
+    {
+        "id":6,
+        "projectName":"🕗 Digital Clock Application",
+        "description":"🚀 Created a digital clock widget app using nextjs",
+        "image":"/images/football.jpg",
+        "link":"https://digital-clock-app-blond.vercel.app/"
+    },
+    {
+        "id":7,
+        "projectName":"😜 Random Joke Generator",
+        "description":"Say not to laugh as much as you can 😂😂",
+        "image":"/images/football.jpg",
+        "link":"https://random-joke-generator-olive.vercel.app/"
+    },
+    {
+        "id":8,
+        "projectName":"Color Picker Application",
+        "description":"🚀 Generate colors for your better choice",
+        "image":"/images/football.jpg",
+        "link":"https://random-joke-generator-olive.vercel.app/"
+    },
+    {
+        "id":9,
+        "projectName":"👨‍🍳 Tip Calculator Application",
+        "description":"🚀 Calculate your tip percentages",
+        "image":"/images/football.jpg",
+        "link":"https://tip-calculator-pink-two.vercel.app/"
+    },
+    {
+        "id":10,
+        "projectName":"Password Generator Application",
+        "description":"🚀 Generate strong and 👨‍💻 non hackable passwords",
+        "image":"/images/football.jpg",
+        "link":"https://tip-calculator-pink-two.vercel.app/"
+    },
+    {
+        "id":11,
+        "projectName":"BMI Calculator Application",
+        "description":" 👨‍⚕️ Calculate and measure your exact bmi with this app",
+        "image":"/images/football.jpg",
+        "link":"https://tip-calculator-pink-two.vercel.app/"
+    },
+    {
+        "id":12,
+        "projectName":"Unit Convertor Application",
+        "description":"🚀 Convert units easily and accurately in unit conventions",
+        "image":"/images/football.jpg",
+        "link":"https://tip-calculator-pink-two.vercel.app/"
+    },
+    {
+        "id":13,
+        "projectName":"HTML Previewer Application",
+        "description":"</> Online code editor for newbiews!",
+        "image":"/images/football.jpg",
+        "link":"https://tip-calculator-pink-two.vercel.app/"
+    },
+    {
+        "id":14,
+        "projectName":"⏰ Pomodoro Timer",
+        "description":"🚀 Manage your time efficiently with this app",
+        "image":"/images/football.jpg",
+        "link":"https://tip-calculator-pink-two.vercel.app/"
+    },
+    {
+        "id":15,
+        "projectName":"Expense Tracker",
+        "description":"🚀 Track your monetary progress with this incredible tool",
+        "image":"/images/football.jpg",
+        "link":"https://tip-calculator-pink-two.vercel.app/"
+    },
+    {
+        "id":16,
+        "projectName":"Movie Search App",
+        "description":"🚀 Find your next movie",
+        "image":"/images/football.jpg",
+        "link":"https://tip-calculator-pink-two.vercel.app/"
+    },
+    {
+        "id":17,
+        "projectName":"Meme Generator App",
+        "description":"🚀 Easily create and share popular memes",
+        "image":"/images/football.jpg",
+        "link":"https://tip-calculator-pink-two.vercel.app/"
+    },
+    {
+        "id":18,
+        "projectName":"Currency Convertor App",
+        "description":"Convert your finances to various currencies across the world",
+        "image":"/images/football.jpg",
+        "link":"https://tip-calculator-pink-two.vercel.app/"
+    },
+    {
+        "id":19,
+        "projectName":"Github Profile Viewer",
+        "description":"🚀 Search your own profile and see your ranking among topnotch developers",
+        "image":"/images/football.jpg",
+        "link":"https://tip-calculator-pink-two.vercel.app/"
+    },
+    {
+        "id":20,
+        "projectName":"Notes App",
+        "description":"🚀 Create and easily share online notes",
+        "image":"/images/football.jpg",
+        "link":"https://tip-calculator-pink-two.vercel.app/"
+    },
+    {
+        "id":21,
+        "projectName":"Recipe Search App",
+        "description":"Search and explore recipes from various traditions around the globe 🌎",
+        "image":"/images/football.jpg",
+        "link":"https://tip-calculator-pink-two.vercel.app/"
+    },
+    {
+        "id":22,
+        "projectName":"Word Counter",
+        "description":"🚀 Test your writing power",
+        "image":"/images/football.jpg",
+        "link":"https://tip-calculator-pink-two.vercel.app/"
+    },
+    {
+        "id":23,
+        "projectName":"Image Slider App",
+        "description":"🚀 See popular images from corners of the world",
+        "image":"/images/football.jpg",
+        "link":"https://tip-calculator-pink-two.vercel.app/"
+    },
+    {
+        "id":24,
+        "projectName":"Quiz App",
+        "description":"🚀 Test your knowledge and take your skills to the 🔥 next level",
+        "image":"/images/football.jpg",
+        "link":"https://tip-calculator-pink-two.vercel.app/"
+    },
+    {
+        "id":25,
+        "projectName":"Stop Watch",
+        "description":"🚀 Stop watch app",
+        "image":"/images/football.jpg",
+        "link":"https://tip-calculator-pink-two.vercel.app/"
+    },
+    {
+        "id":26,
+        "projectName":"Snake Game",
+        "description":"🚀 Online game easy to play",
+        "image":"/images/football.jpg",
+        "link":"https://tip-calculator-pink-two.vercel.app/"
+    },
+    {
+        "id":27,
+        "projectName":"URL shortener",
+        "description":"🚀 Url shortener app",
+        "image":"/images/football.jpg",
+        "link":"https://tip-calculator-pink-two.vercel.app/"
+    },
+    {
+        "id":28,
+        "projectName":"Todolist App",
+        "description":"🚀 Manage your schedule with this tracking app",
+        "image":"/images/football.jpg",
+        "link":"https://tip-calculator-pink-two.vercel.app/"
+    },
+    {
+        "id":29,
+        "projectName":"Random User Generator",
+        "description":"🚀 See different profile inspirations on various social media platforms",
+        "image":"/images/football.jpg",
+        "link":"https://tip-calculator-pink-two.vercel.app/"
+    },
+    {
+        "id":30,
+        "projectName":"Audio player",
+        "description":"🚀 Play , read and create audio files",
+        "image":"/images/football.jpg",
+        "link":"https://tip-calculator-pink-two.vercel.app/"
+    }
+]
