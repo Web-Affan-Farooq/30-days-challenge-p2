@@ -1,0 +1,4 @@
+.top-btn-container::-webkit-scrollbar, .x-axis-container::-webkit-scrollbar {
+    display: none;
+}
+  

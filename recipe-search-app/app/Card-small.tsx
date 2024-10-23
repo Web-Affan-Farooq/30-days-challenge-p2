@@ -11,6 +11,7 @@ import React, { useState } from 'react';
 //     foodCategory:string;
 //     foodId:string;
 // }
+
 interface Card {
     img: string;
     title: string;
