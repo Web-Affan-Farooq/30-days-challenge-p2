@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 interface Button {
     text:string;
@@ -9,4 +9,4 @@ const Button = ({text}:Button) => {
   )
 }
 
-export default Button
+export default Button;

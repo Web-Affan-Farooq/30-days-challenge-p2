@@ -2,6 +2,13 @@ import React from 'react';
 import Card_1 from '../Card/Card-1';
 import projects from '../../data/data.json';
 
+interface Project {
+    id:number;
+    projectName: string;
+    description: string;
+    image: string;
+    link: string;
+}
 const Section_1 = () => {
     return (
         <div>
@@ -13,7 +20,7 @@ const Section_1 = () => {
                 <br />
                 <div className=' p-5 flex flex-row justify-center align-middle flex-wrap gap-5'>
                     {
-                        projects.map((project: any) => { return <Card_1 img={project.image} path={project.link} projectName={project.projectName} description={project.description} key={project.id} /> })
+                        projects.map((project: Project) => { return <Card_1 img={project.image} path={project.link} projectName={project.projectName} description={project.description} key={project.id} /> })
                     }
                 </div>
             </section>

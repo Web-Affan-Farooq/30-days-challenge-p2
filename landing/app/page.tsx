@@ -1,6 +1,5 @@
 import React from 'react';
 import Section_1 from '@/components/Section-1/page';
-import Image from 'next/image';
 
 const Home = () => {
   return (
