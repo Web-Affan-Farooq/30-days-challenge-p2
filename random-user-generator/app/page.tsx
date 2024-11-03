@@ -1,101 +1,67 @@
-import Image from "next/image";
+"use client";
+import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 
-export default function Home() {
+const Home = () => {
+  const [heartVisibility, setheartVisibility] = useState(false);
+  const [userName, setuserName] = useState("");
+  const [UserEmail, setUserEmail] = useState("");
+  const [UserAddress, setUserAddress] = useState("");
+  const [userTel, setuserTel] = useState("");
+  const [userImage, setuserImage] = useState("");
+  
+  const getData = async () => {
+    try {
+      const response = await fetch('https://randomuser.me/api/');
+      const data = await response.json();
+      if (!response.ok && response.status !== 200) {
+        console.log("Error while fetching")
+      }
+      setuserName(data.results[0].name.title+" "+ data.results[0].name.first + " " +data.results[0].name.last);
+      setUserEmail(data.results[0].email);
+      setUserAddress(`${data.results[0].location.street.name} no ${data.results[0].location.street.number}, ${data.results[0].location.state} state, ${data.results[0].location.city}, ${data.results[0].location.country}`);
+      setuserTel(data.results[0].phone);
+      setuserImage(data.results[0].picture.medium);
+
+    } catch (error) {
+      console.error(error);
+    }
+  }
+  useEffect(() => {
+    getData();
+  },[]);
+
+  const handleHeart = () => {
+    setheartVisibility(true);
+    setTimeout(() => {
+      setheartVisibility(false);
+    }, 2000);
+  }
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className='bg-black w-full h-screen'>
+      <i className={`fa-solid fa-heart heart text-red-700 font-bold text-[40px] absolute top-[50vh] left-[50vw] z-10 ${heartVisibility? "opacity-100" : "opacity-5"}`}></i>
+      <div className='w-[500px] h-auto bg-white rounded-2xl m-auto relative top-28 p-5'>
+        <h1 className='text-center text-3xl font-bold text-nowrap'>Random User Generator</h1>
+        <br />
+        <button type="button" className='text-white bg-black p-3 rounded-xl font-bold border-none' onClick={getData}>Generate user</button>
+        <br />
+        <br />
+        <div className='border-2 p-5 border-solid border-gray-600 rounded-2xl'>
+          <Image src={userImage} alt='user image' width={200} height={200} className='object-cover rounded-full m-auto' />
+          <br />
+          <div className=' font-bold text-2xl'><i className="fa-solid fa-user"></i> {userName}</div>
+          <br />
+          <div className=''><i className="fa-solid fa-envelope"></i> {UserEmail}</div>
+          <div className=''><i className="fa-solid fa-location-dot"></i> {UserAddress}</div>
+          <div className=''><i className="fa-solid fa-phone"></i> {userTel}</div>
+          <br />
+          <br />
+          <button type="button" className='font-bold border-2 border-solid border-black py-2 px-5 rounded-2xl m-auto text-center' onClick={handleHeart}>Appreciate User</button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
     </div>
-  );
+  )
 }
+
+export default Home;
