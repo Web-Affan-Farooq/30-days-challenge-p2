@@ -4,4 +4,4 @@ Features to be added.
 
 1. localstorage
 2. Create add to favourites functionality
-3. Create and share functionality
+3. User can also be able to create and share recipes
