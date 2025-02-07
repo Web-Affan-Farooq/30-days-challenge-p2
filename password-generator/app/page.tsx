@@ -16,7 +16,7 @@ const Home = () => {
 
   const handleGeneration = () => {
     let allChars = "";
-    if(addLowercase) allChars += uppercase;
+    if(addUppercase) allChars += uppercase;
     if(addLowercase) allChars += lowercase;
     if(addSpecialChars) allChars += specialChars;
     if(addNumbers) allChars += numbers;
